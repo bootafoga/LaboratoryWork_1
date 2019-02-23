@@ -48,7 +48,7 @@ public:
     void set(T field, int index);
     bool isEmpty() { return (sizeOfList == 0); }
 
-    friend ostream& operator<< (ostream &out, const List<T> list);
+    friend ostream& operator<< (ostream &out, List<T> list);
 
 private:
     Node<T> *head;
@@ -158,7 +158,7 @@ void List<T>::insert(T field, int index)
     }
 }
 
-////////im stopped here
+
 
 template<typename T>
 T List<T>::At(int index)
@@ -170,13 +170,13 @@ T List<T>::At(int index)
     int currentIndex = 0;
 
     while (currentIndex != index) {
-        //if (currentIndex == index) return itemSearch->field;
         itemSearch= itemSearch->nextNode;
         currentIndex++;
     }
 
     return itemSearch->field;
 }
+
 
 template<typename T>
 void List<T>::remove(int index)
@@ -187,6 +187,7 @@ void List<T>::remove(int index)
     if (index == 0) pop_front();
     else {
         Node<T> *beforeDeleted = this->head;
+        Node<T> *Deleted;
         int currentIndex = 0;
 
         while (currentIndex + 1 != index) {
@@ -194,12 +195,17 @@ void List<T>::remove(int index)
             currentIndex++;
         }
 
-        delete beforeDeleted->nextNode;
-        beforeDeleted->nextNode = nullptr;
+        Deleted = beforeDeleted->nextNode;
+        beforeDeleted->nextNode = Deleted->nextNode;
+
+
+        delete Deleted;
 
         sizeOfList--;
     }
 }
+
+
 
 template<typename T>
 inline void List<T>::clear()
@@ -212,6 +218,7 @@ inline void List<T>::clear()
 
     sizeOfList = 0;
 }
+
 
 template<typename T>
 void List<T>::set(T field, int index)

@@ -15,7 +15,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82d8f083-b5eb-4981-af3f-28744a948eab" name="Default Changelist" comment="" />
+    <list default="true" id="82d8f083-b5eb-4981-af3f-28744a948eab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Tests/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/List.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/UnitTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UnitTests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LaboratoryWork_1.dir/Tests/UnitTests.cpp.obj" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,15 +38,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="831" />
-          <entry key="h" value="113" />
+          <entry key="cpp" value="1070" />
+          <entry key="h" value="255" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="944" />
+          <entry key="Doxygen file" value="1" />
+          <entry key="ObjectiveC" value="1324" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -74,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/List.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="160" column="23" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
+            <state relative-caret-position="2907">
+              <caret line="171" column="35" selection-start-line="171" selection-start-column="35" selection-end-line="171" selection-end-column="35" />
               <folding>
                 <element signature="e#196#208#0" expanded="true" />
                 <element signature="e#191#203#0" expanded="true" />
@@ -88,7 +93,7 @@
                 <element signature="e#3716#3728#0" expanded="true" />
                 <element signature="e#4297#4309#0" expanded="true" />
                 <element signature="e#4503#4515#0" expanded="true" />
-                <element signature="e#4850#4859#0" expanded="true" />
+                <element signature="e#5010#5022#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/UnitTests.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+            <state relative-caret-position="272">
+              <caret line="243" column="15" selection-start-line="243" selection-start-column="15" selection-end-line="243" selection-end-column="15" />
               <folding>
                 <element signature="e#42#66#0" expanded="true" />
               </folding>
@@ -119,6 +124,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -141,6 +149,7 @@
     <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -232,12 +241,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550925436508</updated>
-      <workItem from="1550925442079" duration="7338000" />
+      <workItem from="1550925442079" duration="11308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7338000" />
+    <option name="totallyTimeSpent" value="11308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -271,11 +280,29 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Tests/UnitTests.cpp</url>
+          <line>245</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/googletest-master/googletest/scripts/test/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -289,17 +316,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/UnitTests.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+        <state relative-caret-position="272">
+          <caret line="243" column="15" selection-start-line="243" selection-start-column="15" selection-end-line="243" selection-end-column="15" />
           <folding>
             <element signature="e#42#66#0" expanded="true" />
           </folding>
@@ -308,8 +328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/List.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="160" column="23" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
+        <state relative-caret-position="2907">
+          <caret line="171" column="35" selection-start-line="171" selection-start-column="35" selection-end-line="171" selection-end-column="35" />
           <folding>
             <element signature="e#196#208#0" expanded="true" />
             <element signature="e#191#203#0" expanded="true" />
@@ -322,7 +342,7 @@
             <element signature="e#3716#3728#0" expanded="true" />
             <element signature="e#4297#4309#0" expanded="true" />
             <element signature="e#4503#4515#0" expanded="true" />
-            <element signature="e#4850#4859#0" expanded="true" />
+            <element signature="e#5010#5022#0" expanded="true" />
           </folding>
         </state>
       </provider>
