@@ -7,6 +7,7 @@ using testing::Eq;
 namespace {
     class ClassDeclaration: public testing::Test{
     public:
+        //initialization of object that will be used in test
         List<int> obj;
         List<double > obj2;
         List<string> obj3;

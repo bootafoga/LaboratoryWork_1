@@ -26,6 +26,18 @@ int main(int argc, char* argv[]) {
     cout << "New version: " << endl << endl;
     cout << lst << endl;
 
+
+    List<int> lst2;
+
+
+    lst2.push_back(7);
+    lst2.push_back(3);
+    lst2.push_back(0);
+    lst2.push_back(2);
+
+    cout << endl << "Another list of int:" << endl;
+    cout << lst2 << endl;
+
   /* testing::InitGoogleTest(&argc, argv);
     RUN_ALL_TESTS(); */
 

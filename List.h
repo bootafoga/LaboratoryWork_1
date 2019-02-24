@@ -184,7 +184,7 @@ void List<T>::remove(int index)
     if (index == 0) pop_front();
     else {
         Node<T> *beforeDeleted = this->head; //search for the item after which another one will be deleted
-        Node<T> *Deleted;
+        Node<T> *Deleted;  //item that will be deleted
         int currentIndex = 0;
 
         while (currentIndex + 1 != index) {
