@@ -41,7 +41,7 @@ CMakeFiles/LaboratoryWork_1.dir/Tests/UnitTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
- C:/ClionProj/LaboratoryWork_1/Tests/List.h
+ C:/ClionProj/LaboratoryWork_1/List.h
  C:/ClionProj/LaboratoryWork_1/Tests/UnitTests.cpp
 CMakeFiles/LaboratoryWork_1.dir/main.cpp.obj
  ../lib/googletest-master/googlemock/include/gmock/gmock-actions.h
@@ -83,4 +83,5 @@ CMakeFiles/LaboratoryWork_1.dir/main.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+ C:/ClionProj/LaboratoryWork_1/List.h
  C:/ClionProj/LaboratoryWork_1/main.cpp

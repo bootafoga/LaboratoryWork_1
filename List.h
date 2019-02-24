@@ -1,5 +1,5 @@
 //
-// Created by Мария on 23.02.2019.
+// Created by Мария on 20.02.2019.
 //
 
 #ifndef LABORATORYWORK_1_LIST_H
@@ -9,6 +9,7 @@
 #include <iostream>
 using namespace std;
 
+template<class T> class List;
 
 template <typename T>
 class Node {
@@ -48,7 +49,7 @@ public:
     void set(T field, int index);
     bool isEmpty() { return (sizeOfList == 0); }
 
-    friend ostream& operator<< (ostream &out, List<T> list);
+    template <typename T1> friend ostream& operator<< (ostream &out, List<T1> list);
 
 private:
     Node<T> *head;
@@ -237,20 +238,13 @@ void List<T>::set(T field, int index)
     itemSearch->field = field;
 }
 
-
-template<typename T>
-ostream &operator<<(ostream &out, List<T> list)
-{
-
+template<class T> ostream &operator<<(ostream &out, List<T> list) {
     int currentIndex = 0;
     while (currentIndex < list.getSize()) {
         cout << currentIndex << " element is {" << list.At(currentIndex) << "} " << endl;
         currentIndex++;
     }
-
     return out;
 }
-
-
 
 #endif //LABORATORYWORK_1_LIST_H

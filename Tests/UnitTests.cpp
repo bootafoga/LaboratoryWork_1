@@ -1,12 +1,11 @@
 //
-// Created by Мария on 23.02.2019.
+// Created by Мария on 20.02.2019.
 //
 
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 #include <string>
-#include "List.h"
-
+#include "C:\ClionProj\LaboratoryWork_1\List.h"
 using testing::Eq;
 
 namespace {
@@ -103,7 +102,12 @@ TEST_F(ClassDeclaration, Insert_onInt_BiggerThanSizeArg){
 TEST_F(ClassDeclaration, Insert_onDoub_NormArg){
     obj2.push_back(1.1);
     obj2.push_back(2.2);
+
+    ASSERT_EQ(2, obj2.getSize());
+
     obj2.insert(3.3, 1);
+
+    ASSERT_EQ(3, obj2.getSize());
 
     ASSERT_EQ(1.1, obj2.At(0));
     ASSERT_EQ(3.3, obj2.At(1));
@@ -136,6 +140,7 @@ TEST_F(ClassDeclaration, At_onInt_BiggerThanSizeArg){
 TEST_F(ClassDeclaration, At_onDoub_NormArg){
     obj2.push_back(1.1);
     obj2.push_back(2.2);
+
     obj2.At(0);
 
     ASSERT_EQ(1.1, obj2.At(0));
@@ -168,6 +173,8 @@ TEST_F(ClassDeclaration, Remove_onStr_NormArg){
     obj3.push_back("str1");
     obj3.push_back("str2");
     obj3.push_back("str3");
+
+    ASSERT_EQ(3, obj3.getSize());
     obj3.remove(1);
 
     ASSERT_EQ(2, obj3.getSize());
@@ -215,12 +222,13 @@ TEST_F(ClassDeclaration, Set_onDoub_NormArg){
     obj2.push_back(1.1);
     obj2.push_back(2.2);
     obj2.push_back(3.3);
-    obj2.set(1.1, 1);
+
+    obj2.set(4.4, 1);
 
     ASSERT_EQ(3, obj2.getSize());
 
     ASSERT_EQ(1.1, obj2.At(0));
-    ASSERT_EQ(1.1, obj2.At(1));
+    ASSERT_EQ(4.4, obj2.At(1));
     ASSERT_EQ(3.3, obj2.At(2));
 }
 

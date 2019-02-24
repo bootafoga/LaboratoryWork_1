@@ -516,7 +516,7 @@ cxxabi.h
 acxx_demangle.h
 -
 
-C:/ClionProj/LaboratoryWork_1/Tests/List.h
+C:/ClionProj/LaboratoryWork_1/List.h
 iostream
 -
 
@@ -527,6 +527,16 @@ gmock/gmock.h
 -
 string
 -
-List.h
-C:/ClionProj/LaboratoryWork_1/Tests/List.h
+C:/ClionProj/LaboratoryWork_1/List.h
+-
+
+C:/ClionProj/LaboratoryWork_1/main.cpp
+gtest/gtest.h
+-
+gmock/gmock.h
+-
+iostream
+-
+../LaboratoryWork_1/List.h
+C:/ClionProj/LaboratoryWork_1/List.h
 
