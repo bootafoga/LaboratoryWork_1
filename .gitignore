@@ -1,0 +1,6 @@
+
+*.xml
+*.cmake
+*.exe
+*.check_cache
+*.cxx
