@@ -1,7 +1,3 @@
-//
-// Created by Мария on 20.02.2019.
-//
-
 #ifndef LABORATORYWORK_1_LIST_H
 #define LABORATORYWORK_1_LIST_H
 
@@ -64,7 +60,7 @@ void List<T>::push_back(T field)
         head = new Node<T>(field);
     }
     else {
-        Node<T> *lastItemSearch = this->head;
+        Node<T> *lastItemSearch = this->head;   //search for the last item
         while (lastItemSearch->nextNode != nullptr) {
             lastItemSearch = lastItemSearch->nextNode;
         }
@@ -93,7 +89,7 @@ template<typename T>
 void List<T>::pop_back()
 {
     if (head != nullptr) {
-        Node<T> *penultimateItemSearch = this->head;
+        Node<T> *penultimateItemSearch = this->head;    //search item before last
 
         if (head->nextNode == nullptr) {
             delete penultimateItemSearch;
@@ -143,7 +139,7 @@ void List<T>::insert(T field, int index)
     if (index == 0) push_front(field);
     else {
         Node<T> *newItem = new Node<T>(field);
-        Node<T> *beforeNewItem = this->head;
+        Node<T> *beforeNewItem = this->head;    //search for an item after which a new one will be added
 
         int currentIndex = 0;
 
@@ -167,7 +163,7 @@ T List<T>::At(int index)
     if (index < 0) throw out_of_range("Index must be >= 0");
     if (index > sizeOfList) throw out_of_range("Index is larger than size of list");
 
-    Node<T> *itemSearch = this->head;
+    Node<T> *itemSearch = this->head;   //search for the desired item by index
     int currentIndex = 0;
 
     while (currentIndex != index) {
@@ -187,7 +183,7 @@ void List<T>::remove(int index)
 
     if (index == 0) pop_front();
     else {
-        Node<T> *beforeDeleted = this->head;
+        Node<T> *beforeDeleted = this->head; //search for the item after which another one will be deleted
         Node<T> *Deleted;
         int currentIndex = 0;
 

@@ -1,7 +1,3 @@
-//
-// Created by Мария on 20.02.2019.
-//
-
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 #include <string>
