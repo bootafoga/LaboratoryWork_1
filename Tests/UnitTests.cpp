@@ -163,7 +163,6 @@ TEST_F(ClassDeclaration, Remove_onStr_BiggerThanSizeArg){
     }
 }
 
-
 TEST_F(ClassDeclaration, Remove_onStr_NormArg){
     obj3.push_back("str1");
     obj3.push_back("str2");
@@ -213,7 +212,6 @@ TEST_F(ClassDeclaration, Set_onDoub_NormArg){
     obj2.push_back(1.1);
     obj2.push_back(2.2);
     obj2.push_back(3.3);
-
     obj2.set(4.4, 1);
 
     ASSERT_EQ(3, obj2.getSize());

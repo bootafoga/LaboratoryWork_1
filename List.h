@@ -226,10 +226,6 @@ void List<T>::set(T field, int index)
     itemSearch->field = field;
 }
 
-
-
-
-
 template<class T> ostream &operator<<(ostream &out, List<T>& list) {
     int currentIndex = 0;
     while (currentIndex < list.getSize()) {

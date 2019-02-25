@@ -26,7 +26,6 @@ int main(int argc, char* argv[]) {
     cout << "\nNew version: \n";
     cout << lstChar;
 
-
     cout <<"\n\n~~~~~Int~~~~~";
     List<int> lstOfInt;
 
