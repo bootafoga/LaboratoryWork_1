@@ -9,7 +9,9 @@ template<class T> class List;
 
 template <typename T>
 class Node {
+
 public:
+    ~Node();
     Node *nextNode;
     T field;
     Node(T field) {
@@ -17,6 +19,13 @@ public:
         this->nextNode = nullptr;
     }
 };
+
+
+template<typename T>
+Node<T>::~Node() {
+    nextNode = nullptr;
+
+}
 
 
 template <typename T>
@@ -29,8 +38,7 @@ public:
     }
 
     ~List() {
-        //clear();
-        head = nullptr;
+        clear();
     }
 
     void push_back(T field);
@@ -43,7 +51,7 @@ public:
     int getSize() { return sizeOfList; }
     void clear();
     void set(T field, int index);
-    bool isEmpty() { return (sizeOfList == 0); }
+    bool isEmpty() { return ((sizeOfList == 0) && (head == nullptr)); }
 
     template <typename T1> friend ostream& operator<< (ostream &out, List<T1> list);
 
@@ -195,7 +203,6 @@ void List<T>::remove(int index)
         Deleted = beforeDeleted->nextNode;
         beforeDeleted->nextNode = Deleted->nextNode;
 
-
         delete Deleted;
 
         sizeOfList--;
@@ -237,7 +244,7 @@ void List<T>::set(T field, int index)
 template<class T> ostream &operator<<(ostream &out, List<T> list) {
     int currentIndex = 0;
     while (currentIndex < list.getSize()) {
-        cout << currentIndex << " element is {" << list.At(currentIndex) << "} " << endl;
+        cout << "\n"<<currentIndex << " element is {" << list.At(currentIndex) << "}";
         currentIndex++;
     }
     return out;

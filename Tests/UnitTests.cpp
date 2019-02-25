@@ -185,11 +185,9 @@ TEST_F(ClassDeclaration, Clear_onInt){
     obj.push_back(2);
     obj.push_back(3);
 
-    ASSERT_EQ(3, obj.getSize());
-
     obj.clear();
 
-    ASSERT_EQ(0, obj.getSize());
+    ASSERT_EQ(1, obj.isEmpty());
 
 }
 
