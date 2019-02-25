@@ -1,7 +1,6 @@
 #ifndef LABORATORYWORK_1_LIST_H
 #define LABORATORYWORK_1_LIST_H
 
-
 #include <iostream>
 using namespace std;
 
@@ -20,12 +19,10 @@ public:
     }
 };
 
-
 template<typename T>
 Node<T>::~Node() {
     nextNode = nullptr;
 }
-
 
 template <typename T>
 class List {
@@ -52,7 +49,7 @@ public:
     void set(T field, int index);
     bool isEmpty() { return ((sizeOfList == 0) && (head == nullptr)); }
 
-    template <typename T1> friend ostream& operator<< (ostream &out, List<T1> list);
+    template <typename T1> friend ostream& operator<< (ostream &out, List<T1>&);
 
 private:
     Node<T> *head;
@@ -162,8 +159,6 @@ void List<T>::insert(T field, int index)
     }
 }
 
-
-
 template<typename T>
 T List<T>::At(int index)
 {
@@ -180,7 +175,6 @@ T List<T>::At(int index)
 
     return itemSearch->field;
 }
-
 
 template<typename T>
 void List<T>::remove(int index)
@@ -208,8 +202,6 @@ void List<T>::remove(int index)
     }
 }
 
-
-
 template<typename T>
 inline void List<T>::clear()
 {
@@ -221,7 +213,6 @@ inline void List<T>::clear()
 
     sizeOfList = 0;
 }
-
 
 template<typename T>
 void List<T>::set(T field, int index)
@@ -240,7 +231,7 @@ void List<T>::set(T field, int index)
     itemSearch->field = field;
 }
 
-template<class T> ostream &operator<<(ostream &out, List<T> list) {
+template<class T> ostream &operator<<(ostream &out, List<T>& list) {
     int currentIndex = 0;
     while (currentIndex < list.getSize()) {
         cout << "\n"<<currentIndex << " element is {" << list.At(currentIndex) << "}";

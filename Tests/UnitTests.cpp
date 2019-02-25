@@ -72,7 +72,6 @@ TEST_F(ClassDeclaration, PopFront_onStr){
     ASSERT_EQ("str3", obj3.At(1));
 }
 
-
 TEST_F(ClassDeclaration, Insert_onInt_NegativeArg){
    try {
             obj.insert(-1, -19);
@@ -210,7 +209,6 @@ TEST_F(ClassDeclaration, Set_onDoub_BiggerThanSizeArg){
     }
 }
 
-
 TEST_F(ClassDeclaration, Set_onDoub_NormArg){
     obj2.push_back(1.1);
     obj2.push_back(2.2);
@@ -244,4 +242,3 @@ TEST_F(ClassDeclaration, IsEmpty_onInt){
 
     ASSERT_EQ(0, obj.isEmpty());
 }
-
