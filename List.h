@@ -1,28 +1,23 @@
 #ifndef LABORATORYWORK_1_LIST_H
 #define LABORATORYWORK_1_LIST_H
-
 #include <iostream>
-using namespace std;
 
-template<class T> class List;
+using namespace std;
 
 template <typename T>
 class Node {
-
 public:
-    ~Node();
-    Node *nextNode;
-    T field;
     Node(T field) {
         this->field = field;
         this->nextNode = nullptr;
     }
+    ~Node(){
+        nextNode = nullptr;
+    }
+    Node *nextNode;
+    T field;
 };
 
-template<typename T>
-Node<T>::~Node() {
-    nextNode = nullptr;
-}
 
 template <typename T>
 class List {
@@ -230,6 +225,10 @@ void List<T>::set(T field, int index)
 
     itemSearch->field = field;
 }
+
+
+
+
 
 template<class T> ostream &operator<<(ostream &out, List<T>& list) {
     int currentIndex = 0;

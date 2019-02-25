@@ -6,9 +6,9 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
 
+    cout <<"\n~~~~~Char~~~~~";
     List<char> lstChar;
 
-    cout <<"\n~~~~~Char~~~~~";
     lstChar.push_back('M');
     lstChar.push_back('a');
     lstChar.push_back('s');
@@ -17,12 +17,17 @@ int main(int argc, char* argv[]) {
 
     cout << "\n\nOriginal version:\n";
     cout << lstChar;
-    cout << "\n\nNow using the remove i del item #2\n";
-    lstChar.remove(1);
+
+    cout << "\n\nNow using the set i add a new field to item #4 and using the remove i del item #1\n";
+
+    lstChar.set('k', 3);
+    lstChar.remove(0);
+
     cout << "\nNew version: \n";
     cout << lstChar;
 
 
+    cout <<"\n\n~~~~~Int~~~~~";
     List<int> lstOfInt;
 
     lstOfInt.push_back(7);
@@ -30,11 +35,14 @@ int main(int argc, char* argv[]) {
     lstOfInt.push_back(0);
     lstOfInt.push_back(2);
 
-    cout <<"\n\n~~~~~Int~~~~~";
     cout << "\n\nOriginal version: \n";
     cout << lstOfInt;
-    cout << "\n\nNow using the remove i del item #2\n";
-    lstOfInt.remove(1);
+
+    cout << "\n\nNow using the set i add a new field to item #4 and using the remove i del item #1\n";
+
+    lstOfInt.set(7, 3);
+    lstOfInt.remove(0);
+
     cout << "\nNew version: ";
     cout << lstOfInt;
 
