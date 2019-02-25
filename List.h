@@ -24,7 +24,6 @@ public:
 template<typename T>
 Node<T>::~Node() {
     nextNode = nullptr;
-
 }
 
 

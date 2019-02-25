@@ -20,12 +20,8 @@ int main(int argc, char* argv[]) {
     lstChar.set('S', 2);
     lstChar.remove(0);
 
-
-
     cout <<"\n~~~~~Char~~~~~";
     cout << lstChar;
-
-
 
     List<int> lstOfInt;
 
@@ -45,8 +41,6 @@ int main(int argc, char* argv[]) {
 
     lstChar.clear();
     lstOfInt.clear();
-
-    // cout << lstOfInt.isEmpty();
 
 
    /* testing::InitGoogleTest(&argc, argv);

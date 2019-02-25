@@ -70,7 +70,6 @@ TEST_F(ClassDeclaration, PopFront_onStr){
 
     ASSERT_EQ("str2", obj3.At(0));
     ASSERT_EQ("str3", obj3.At(1));
-
 }
 
 
@@ -188,7 +187,6 @@ TEST_F(ClassDeclaration, Clear_onInt){
     obj.clear();
 
     ASSERT_EQ(1, obj.isEmpty());
-
 }
 
 TEST_F(ClassDeclaration, Set_onDoub_NegativeArg){
