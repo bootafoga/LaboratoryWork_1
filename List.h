@@ -227,10 +227,12 @@ void List<T>::set(T field, int index)
 }
 
 template<class T> ostream &operator<<(ostream &out, List<T>& list) {
+    Node<T> *itemSearch = list.head;
     int currentIndex = 0;
     while (currentIndex < list.getSize()) {
-        cout << "\n"<<currentIndex << " element is {" << list.At(currentIndex) << "}";
+        cout << "\n"<< currentIndex << " element is {" << itemSearch->field << "}";
         currentIndex++;
+        itemSearch= itemSearch->nextNode;
     }
     return out;
 }
